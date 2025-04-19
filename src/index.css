@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary1 : #212121;
+  --color-primary2 : #050505;
+  --color-primary3 : oklch(27.8% 0.033 256.848);
+  --color-primary4: #393E46;
+  --color-secondary1 : #3C3D37;
+
+  --color-text-main1 : #ffffff;
+  --color-text-main2 : oklch(70.4% 0.04 256.788);
+  --color-text-secondary1 : oklch(55.1% 0.027 264.364);
+
+  --color-btn-primary1: oklch(54.6% 0.245 262.881);
+  --color-btn-primary1-hover: oklch(48.8% 0.243 264.376);
+  --color-btn-primary2: #6C7A89;
+  --color-btn-primary3: oklch(62.3% 0.214 259.815);
+}
+
+@layer base {
+  [data-theme='batman']{
+    --color-primary1:#212121;
+    --color-primary2:#050505;
+    --color-primary3 : oklch(27.8% 0.033 256.848);
+    --color-primary4: #393E46;
+    --color-secondary1 : #3C3D37;
+  
+    --color-text-main1 : #ffffff;
+    --color-text-main2 : oklch(70.4% 0.04 256.788);
+    --color-text-secondary1 : oklch(55.1% 0.027 264.364);
+
+    --color-btn-primary1: oklch(54.6% 0.245 262.881);
+    --color-btn-primary1-hover: oklch(48.8% 0.243 264.376);
+    --color-btn-primary2: #6C7A89;
+    --color-btn-primary3: oklch(62.3% 0.214 259.815);
+  }
+  [data-theme='interstellar'] {
+    --color-primary1: #1E1A39; /* Deep space blue */
+    --color-primary2: #3B2A8D; /* Cosmic indigo */
+    --color-primary3: #7E7A9A; /* Nebula gray */
+    --color-primary4: #8ea1bf; /* Starlight silver */
+    --color-secondary1: #FFFFFF; /* Pure white for contrast */
+  
+    --color-text-main1: #FFFFFF; /* Main text in white */
+    --color-text-main2: #D1D1E9; /* Secondary text in light lavender */
+    --color-text-secondary1: #C9D1E0; /* Soft cosmic mist */
+      
+    --color-btn-primary1: #3B2A8D; /* Buttons in cosmic indigo */
+    --color-btn-primary1-hover: #4C3BA0; /* Hover state in lighter indigo */
+    --color-btn-primary2: #A3AEBE; /* Tertiary buttons in starlight silver */
+    --color-btn-primary3: #7E7A9A; /* Secondary buttons in nebula gray */
+  }
+  
+  [data-theme='nature']{
+    --color-primary1: #163020; 
+    --color-primary2: #12372A; 
+    --color-primary3: #506758; 
+    --color-primary4: #789461;
+    --color-secondary1: #99BC85; 
+
+    --color-text-main1: #ffffff;
+    --color-text-main2: #DBE7C9; 
+    --color-text-secondary1: #BFD8AF; 
+
+    --color-btn-primary1: #4F6F52; 
+    --color-btn-primary1-hover: #50623A; 
+    --color-btn-primary2: #a1a7a1; 
+    --color-btn-primary3: #C6A969;
+  }
+
+  [data-theme='focus-mode'] {
+    --color-primary1: #1A222C;   /* deep cool slate */
+    --color-primary2: #25303D;   /* muted blue-gray */
+    --color-primary3: #374550;   /* subtle depth */
+    --color-primary4: #5E6E7E;   /* soft highlight */
+    --color-secondary1: #A6B3C3; /* faint calming contrast */
+  
+    --color-text-main1: #E4EAF1;
+    --color-text-main2: #C8D0DB;
+    --color-text-secondary1: #9CA7B6;
+  
+    --color-btn-primary1: #435161;
+    --color-btn-primary1-hover: #56677A;
+    --color-btn-primary2: #7D8C9D;
+    --color-btn-primary3: #B1C0D0;
+  }
+  
+  [data-theme='monochrome'] {
+    --color-primary1: #1E1E1E;   /* jet black */
+    --color-primary2: #2A2A2A;   /* dark graphite */
+    --color-primary3: #3C3C3C;   /* medium gray */
+    --color-primary4: #565656;   /* lighter charcoal */
+    --color-secondary1: #8C8C8C; /* neutral highlight */
+  
+    --color-text-main1: #F0F0F0; 
+    --color-text-main2: #DADADA;
+    --color-text-secondary1: #A0A0A0;
+  
+    --color-btn-primary1: #474747;
+    --color-btn-primary1-hover: #5E5E5E;
+    --color-btn-primary2: #B0B0B0;
+    --color-btn-primary3: #D4D4D4;
+  }
+
+  [data-theme='quiet-hours'] {
+    --color-primary1: #1C1F2A;   /* deep night blue */
+    --color-primary2: #2A2E3F;   /* slightly lighter dark navy */
+    --color-primary3: #3C4254;   /* soft shadows */
+    --color-primary4: #586375;   /* muted slate blue */
+    --color-secondary1: #A3B1C6; /* soft accent for contrast */
+  
+    --color-text-main1: #E8EAED;    /* off-white for eyes */
+    --color-text-main2: #C5C9D2;    /* soft gray-blue */
+    --color-text-secondary1: #9FA7BA; /* dim text hints */
+  
+    --color-btn-primary1: #3D4861; 
+    --color-btn-primary1-hover: #505A74;
+    --color-btn-primary2: #7886A0;
+    --color-btn-primary3: #AFC1DD;
+  }
+  
+  [data-theme='crimson-core'] {
+    --color-primary1: #0A0A0A;   /* deep black */
+    --color-primary2: #1A1A1A;   /* dark gray */
+    --color-primary3: #2E2E2E;   /* medium gray */
+    --color-primary4: #3F3F3F;   /* lighter gray */
+    --color-secondary1: #FF2E2E; /* vibrant crimson red */
+  
+    --color-text-main1: #FFFFFF;   /* pure white */
+    --color-text-main2: #E0E0E0;   /* light gray */
+    --color-text-secondary1: #B0B0B0; /* medium gray */
+  
+    --color-btn-primary1: #FF2E2E; 
+    --color-btn-primary1-hover: #CC0000;
+    --color-btn-primary2: #FF8E8E;
+    --color-btn-primary3: #FF5E5E;
+  }
+  
+  [data-theme='sunset-bliss'] {
+    --color-primary1: #2B1A2F;   /* deep plum dusk */
+    --color-primary2: #563761;   /* mellow grape twilight */
+    --color-primary3: #8C4C71;   /* soft mauve glow */
+    --color-primary4: #C77966;   /* sunset peach */
+    --color-secondary1: #FFD6A5; /* warm pastel highlight */
+  
+    --color-text-main1: #FFF6F0;      /* creamy white */
+    --color-text-main2: #F6D5C0;      /* soft coral tint */
+    --color-text-secondary1: #E4AFA0; /* gentle dusty rose */
+  
+    --color-btn-primary1: #FF9770; 
+    --color-btn-primary1-hover: #FF6B6B;
+    --color-btn-primary2: #FFE6C7;
+    --color-btn-primary3: #FFB570;
+  }
+  
+}
+
+@keyframes slide-carousel {
+  0%, 20% {
+    transform: translateX(0%);
+  }
+  25%, 45% {
+    transform: translateX(-100%);
+  }
+  50%, 70% {
+    transform: translateX(-200%);
+  }
+  75%, 100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-slide-carousel {
+  animation: slide-carousel 15s ease-in-out infinite;
+}
+.animate-slide-carousel:hover {
+  animation-play-state: paused;
+}
