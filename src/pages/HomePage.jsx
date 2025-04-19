@@ -2,8 +2,8 @@ import TopBar from '../components/TopBar';
 import CodeEditor from '../components/CodeEditor';
 import TestCase from "../components/TestCase";
 import ExecutionOutput from '../components/ExecutionOutput';
-import SpotifyUserInfo from '../components/SpotifyUserInfo';
-import SpotifyLogin from '../components/SpotifyLogin';
+// import SpotifyUserInfo from '../components/SpotifyUserInfo';
+// import SpotifyLogin from '../components/SpotifyLogin';
 
 const HomePage = () => {
   return (
